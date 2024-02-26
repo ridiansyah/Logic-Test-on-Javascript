@@ -1,4 +1,4 @@
-function LengthSameSubstring(input) {
+const LengthSameSubstring = (input) => {
   let returnVar = [];
   let indexAt = null;
   if (input) {
@@ -24,10 +24,10 @@ function LengthSameSubstring(input) {
         }
       }
     }
-    return returnVar.map((obj) => obj.char + " = " + obj.munch);
+    returnVar.map((obj) => console.log(obj.char + " = " + obj.munch));
   } else {
-    return "No Input";
+    console.log("No Input");
   }
-}
+};
 
-console.log(LengthSameSubstring("aaabbcccaaaac"));
+LengthSameSubstring("aaabbcccaaaac");
